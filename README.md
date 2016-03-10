@@ -1,15 +1,14 @@
-# turbo-sunshine-palace
-A cool twitter app for comparing tweets/users
+# Node.js Starter Overview
 
-#Don't forget to install:
-- [HTTP-Server](https://www.npmjs.com/package/http-server)
+The Node.js Starter demonstrates a simple, reusable Node.js web application based on the Express framework.
 
-#Solution:
-Quick and simple twitter user comparison (with ranking)
+## Run the app locally
 
-#Personas
-Keith - Manager
-Needs To: Keep track of his teams twitter activity
+1. [Install Node.js][]
+2. Download and extract the starter code from the Bluemix UI
+3. cd into the app directory
+4. Run `npm install` to install the app's dependencies
+5. Run `npm start` to start the app
+6. Access the running app in a browser at http://localhost:6001
 
-Tim - Average Twitter User
-Needs To: Compare his activity with his friends
+[Install Node.js]: https://nodejs.org/en/download/
