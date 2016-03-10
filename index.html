@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="./css/skeleton.css">
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <title>Hello World</title>
-  </head>
-  <header>
-    <h1  class="text-center">Turbo Sunshine Palace</h1>
-  </header>
-  <body class="container">
-    <form>
-      <div class="row">
-        <div class="twelve columns">
-          <input type="text" class="u-full-width"/>
-        </div>
-      </div>
-      <div class="break-space"></div>
-      <div class="row">
-        <div class="twelve columns">
-          <button type="submit" class="button-primary u-full-width">Submit</button>
-        </div>
-      </div>
-    </form>
-  </body>
-  <footer>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <title>Hello World</title>
+</head>
+<header>
+  <h1 class="text-center">Turbo Sunshine Palace</h1>
+</header>
+
+<body class="container" ng-app="myApp" ng-controller="myCtrl">
+  <form>
     <div class="row">
       <div class="twelve columns">
-        <p class="text-center">Made With ♥</p>
+        <p class="text-center">pls enter twitter handle..</p>
+      </div>
+    <div class="row">
+      <div class="twelve columns">
+        <input type="text" class="u-full-width" ng-model="name" />
       </div>
     </div>
-    <script src="./js/angular.min.js"></script>
-    <script src="./js/app.js"></script>
-  </footer>
+    <div class="break-space"></div>
+    <div class="row">
+      <div class="twelve columns">
+        <button type="submit" class="button-primary u-full-width" ng-click="getTwitterProfile()">Search</button>
+      </div>
+    </div>
+  </form>
+</body>
+<footer>
+  <div class="row">
+    <div class="twelve columns">
+      <p class="text-center">Made With ♥</p>
+    </div>
+  </div>
+  <script src="./js/jquery-ui.min.js"></script>
+  <script src="./js/angular.min.js"></script>
+  <script src="./js/app.js"></script>
+</footer>
 </html>
